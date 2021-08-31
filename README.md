@@ -1,4 +1,4 @@
-# about_buttons
+# About differnt kinds of buttons used in flutter.
 
 A new Flutter project.
 
