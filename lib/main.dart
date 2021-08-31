@@ -1,3 +1,6 @@
+// In this project I will show you how to impliment differnt kinds of buttons in flutter.
+
+
 import 'package:flutter/material.dart';
 
 void main() {
@@ -14,6 +17,9 @@ class MyApp extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
+
+              // Code for RaisedButton:
+
               RaisedButton(
                 color: Colors.blue,
                 textColor: Colors.white,
@@ -22,18 +28,36 @@ class MyApp extends StatelessWidget {
                 },
                 child: Text('A Raised Button'),
               ),
+
+
+
+              // Code for ElevatedButton:
+
               ElevatedButton(
                 style: ElevatedButton.styleFrom(
-                    primary: Colors.black, // primary me background color cover,
+                    primary: Colors.black,
                     onPrimary: Colors.orange),
+
+                // Alternative way of styling of a button.
+
+                //Note: this alternate way is also applied for all kinds of buttons. 
 
                 // ButtonStyle(
                 //     backgroundColor: MaterialStateProperty.all(Colors.black),
                 //     foregroundColor: MaterialStateProperty.all(Colors.red),),
                 // automatically gest color of your theme color.
+                
+
                 onPressed: () {},
                 child: Text('Elevated Button'),
               ),
+
+
+
+
+
+              // Code for FlatButton Button:
+
               FlatButton(
                 textColor: Colors.blue,
                 onPressed: () {
@@ -41,8 +65,13 @@ class MyApp extends StatelessWidget {
                 },
                 child: Text('A Flat Button'),
               ),
+
+
+
+
+              // Code for TextButton:
+
               TextButton(
-                // text button me background color nahi hota hamne yahan add kiya lekin hota nahi.iska primary text pe apply hota hai.
                 style: ButtonStyle(
                   backgroundColor: MaterialStateProperty.all(Colors.black),
                   foregroundColor: MaterialStateProperty.all(Colors.white),
@@ -50,6 +79,12 @@ class MyApp extends StatelessWidget {
                 onPressed: () {},
                 child: Text('Text Button'),
               ),
+
+
+
+
+              // Code for OutlineButton:
+
               OutlineButton(
                 borderSide: BorderSide(color: Colors.blue),
                 onPressed: () {
@@ -58,9 +93,15 @@ class MyApp extends StatelessWidget {
                 textColor: Colors.blue,
                 child: Text('Outline Button'),
               ),
+
+
+
+
+              // Code for OutlinedButton:
+
               OutlinedButton(
                 style: OutlinedButton.styleFrom(
-                  primary: Colors.orange, // iska primary text pe apply.
+                  primary: Colors.orange,
                   side: BorderSide(color: Colors.black),
                 ),
                 onPressed: () {},
